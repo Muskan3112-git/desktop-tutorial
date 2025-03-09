@@ -1,0 +1,684 @@
+<?php
+session_start();
+if (!isset($_SESSION["user"])) {
+header("Location: login.php");
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/66a294ea69.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div id="__nuxt">
+    <div id="__layout">
+        <div class="web_background">
+
+            <!-- Code for Header -->
+            <nav class="navheader">
+                <div class="heraderdiv1">
+                    <div class="heraderdiv2">
+                        <a href="/" aria-current="page" class="logo">
+                            <img src="images/roundy.png" alt="roundy" height="28" width="28" class="yocket-logo">
+                            <img src="images/yocket_name_logo.png" alt="yocket_name_logo" height="24" width="56"  class="yocket_name_logo">
+                        </a>
+                        <ul class="leftitems">
+                            <li class="feed">
+                                <a href="https://yocket.com/feed" class="Feed">
+                                    <span class="feedtext">Feed</span>
+                                </a>
+                            </li>
+                            <li class="liexplore">
+                                <div class="explore">
+                                    <a href="https://yocket.com/universities" aria-expanded="false" class="aexplore">
+                                        <div id="university-explore-button" class="Explore">
+                                            <span class="sexplore">
+                                                <p class="pexplore">Explore</p>
+                                                <img alt="chevron" src="images/chevron.svg" class="chevron">
+                                            </span>
+                                        </div>    
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="college-finder">
+                                <a href="/college-finder" class="acollege-finder">
+                                    <span class="scollege-finder">College Finder</span>
+                                </a>
+                            </li>
+                            <li class="admin">
+                                <a href="/connect" class="aadmin">
+                                    <span class="sadmin">Admits &amp; Rejects</span>
+                                </a>
+                            </li>
+                            <li class="Products">
+                                <div class="product">
+                                    <button class="bproducts">
+                                        <span class="sproducts">
+                                            <p >Products</p> 
+                                            <img src="images/chevron.svg" alt="chevron" class="chevron">
+                                        </span>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="premium">
+                            <a href="https://yocket.com/premium/">
+                                <div data-v-64a6663e="" class="dpremium">
+                                    <img src="images/crown.png" alt="crown" height="20" width="20" title="premium" class="sshot">
+                                    <div class="Premium">
+                                        <span class="spremium">
+                                        Premium
+                                        </span> 
+                                    <img src="assets/images/CrownOrangeFilledTwo.svg" alt="premium" class="crown">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="virtual">
+                            <a class="avirtual">
+                                <img data-v-64a6663e="" src="images/call.png" alt="virtual-office-icon" height="20" width="20" class="building"> 
+                                <span class="svirtual">Ask Our Experts</span> 
+                                <div class="open"> FREE </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="search">
+                            <img src="images/search_logo.png" height="24" width="24" alt="search-logo" class="search">
+                        </div>
+                        <a href="/login" class="login"id="login-user-button">
+                            Login
+                        </a>
+                        <a href="https://yocket.com/download-app" class="download">
+                            
+                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#0058EE] h-5" data-v-64a6663e="">
+                                <path d="M9.32007 11.68L11.8801 14.24L14.4401 11.68" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                </path> <path d="M11.8799 4V14.17" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> 
+                                <path d="M20 12.18C20 16.6 17 20.18 12 20.18C7 20.18 4 16.6 4 12.18" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <span data-v-64a6663e="" class="sdownload"> Download App </span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <!-- header end -->
+                    
+                <!-- Code for body -->
+    <main class="main">
+      <div class="bg-white">
+          <!-- Section1 -->
+          <section id="headerSection">
+              <div class="hero-section">
+                  <div class="hero">
+                      <div class="hero_text">
+                          <div>
+                              <h1 class="top_heading">
+                                  Unlock Your 
+                                  <br>
+                                  Study Abroad Journey 
+                                  <br>
+                                  From GRE Prep to Visa!
+                              </h1>
+                              <p class="top_para">
+                                  Explore thousands of programs, get matched with an advisor
+                              </p>
+                          </div>
+                          <div class="Student">
+                              <img src="https://d15gkqt2d16c1n.cloudfront.net/images/webp/CommunityStudentsIamge.webp" alt="we are backed" class="Student_images"> 
+                              <span class="Student_text">
+                              1M+ students in our community
+                              </span>
+                          </div>
+                          <a href="https://yocket.com/feed/booking?source=PC_Home_Booking" target="_blank" class="connect_expert">
+                              Connect with our Expert
+                          </a>
+                      </div>
+                      <div class="video_Border">
+                          <iframe src="https://youtube.com/embed/Gi-rJyDbIn4?mute=1" title="YouTube video player" class="video">
+                          </iframe>
+                      </div>
+                  </div>
+              </div>
+
+<!--Premium start here-->
+<div id="premiumAdmitsSection">
+  <h2 class="sectionTitle">Top Premium Admits</h2>
+  <p class="sectionSubtitle">Gateway to the IVY Leagues</p>
+  <div class="admitCardsContainer">
+    <!-- Card 1 -->
+    <div class="admitCard">
+      <div class="admitBadge">
+        <img src="images/admit.jpg" alt="Admit Badge" class="admitBadgeImage">
+      </div>
+      <h3 class="universityName">Columbia University</h3>
+      <div class="admitStats">
+        <span class="admitStat">
+          <img src="images/yocketers-icon.jpg" alt="Yocketers Icon">
+          <span><b>86+</b></span>
+          Yocketers Admitted
+        </span>
+        <span class="admitStat">
+          <img src="images/scholarship-icon.jpg" alt="Scholarship Icon">
+          <span><b>$17.5k</b></span>
+          Scholarships granted
+        </span>
+      </div>
+      <img src="images/img1.jpg" alt="Columbia University" class="universityImage">
+      <div class="admitInfo">
+        <img src="images/user-profile.jpg" alt="Sharvari Bhosale" class="userImage">
+        <div class="admitDetails">
+          <span class="userName">Sharwari Bhosale</span>
+          <span class="admitTerm">Fall 2024</span>
+        </div>
+        <span class="arrowIcon">&raquo;</span>
+      </div>
+    </div>
+    <!-- Repeat above card structure for each university -->
+
+    <div class="admitCard">
+      <div class="admitBadge">
+        <img src="images/admit.jpg" alt="Admit Badge" class="admitBadgeImage">
+      </div>
+      <h3 class="universityName">Cornell University</h3>
+      <div class="admitStats">
+        <span class="admitStat">
+          <img src="images/yocketers-icon.jpg" alt="Yocketers Icon">
+          <span><b>52+</b></span>
+          Yocketers Admitted
+        </span>
+        <span class="admitStat">
+          <img src="images/scholarship-icon.jpg" alt="Scholarship Icon">
+          <span><b>$90k</b></span>
+          Scholarships granted
+        </span>
+      </div>
+      <img src="images/img2.jpg" alt="Columbia University" class="universityImage">
+      <div class="admitInfo">
+        <img src="images/user-profile4.jpg" alt="Sharvari Bhosale" class="userImage">
+        <div class="admitDetails">
+          <span class="userName">Atharva Thodge</span>
+          <span class="admitTerm">Fall 2024</span>
+        </div>
+        <span class="arrowIcon">&raquo;</span>
+      </div>
+    </div>
+
+    <div class="admitCard">
+      <div class="admitBadge">
+        <img src="images/admit.jpg" alt="Admit Badge" class="admitBadgeImage">
+      </div>
+      <h3 class="universityName">New Work University</h3>
+      <div class="admitStats">
+        <span class="admitStat">
+          <img src="images/yocketers-icon.jpg" alt="Yocketers Icon">
+          <span><b>263+</b></span>
+          Yocketers Admitted
+        </span>
+        <span class="admitStat">
+          <img src="images/scholarship-icon.jpg" alt="Scholarship Icon">
+          <span><b>$1.2M</b></span>
+          Scholarships granted
+        </span>
+      </div>
+      <img src="images/img3.jpg" alt="Columbia University" class="universityImage">
+      <div class="admitInfo">
+        <img src="images/user-profile3.jpg" alt="Sharvari Bhosale" class="userImage">
+        <div class="admitDetails">
+          <span class="userName">Shravan Khunti</span>
+          <span class="admitTerm">Fall 2024</span>
+        </div>
+        <span class="arrowIcon">&raquo;</span>
+      </div>
+    </div>
+
+    <div class="admitCard">
+      <div class="admitBadge">
+        <img src="images/admit.jpg" alt="Admit Badge" class="admitBadgeImage">
+      </div>
+      <h3 class="universityName">University of California, Los Angeles</h3>
+      <div class="admitStats">
+        <span class="admitStat">
+          <img src="images/yocketers-icon.jpg" alt="Yocketers Icon">
+          <span><b>29+</b></span>
+          Yocketers Admitted
+        </span>
+        <span class="admitStat">
+          <img src="images/scholarship-icon.jpg" alt="Scholarship Icon">
+          <span><b>$207k</b></span>
+          Scholarships granted
+        </span>
+      </div>
+      <img src="images/img4.jpg" alt="Columbia University" class="universityImage">
+      <div class="admitInfo">
+        <img src="images/user-profile2.jpg" alt="Sharvari Bhosale" class="userImage">
+        <div class="admitDetails">
+          <span class="userName">Prateeka Rawat</span>
+          <span class="admitTerm">Fall 2024</span>
+        </div>
+        <span class="arrowIcon">&raquo;</span>
+      </div>
+    </div>
+
+    <div class="admitCard">
+      <div class="admitBadge">
+        <img src="images/admit.jpg" alt="Admit Badge" class="admitBadgeImage">
+      </div>
+      <h3 class="universityName">Johns Hopkins University </h3>
+      <div class="admitStats">
+        <span class="admitStat">
+          <img src="images/yocketers-icon.jpg" alt="Yocketers Icon">
+          <span><b>49+</b></span>
+          Yocketers Admitted
+        </span>
+        <span class="admitStat">
+          <img src="images/scholarship-icon.jpg" alt="Scholarship Icon">
+          <span><b>$81k</b></span>
+          Scholarships granted
+        </span>
+      </div>
+      <img src="images/img 11.jpg" alt="Columbia University" class="universityImage">
+      <div class="admitInfo">
+        <img src="images/user-profile5.jpg" alt="Sharvari Bhosale" class="userImage">
+        <div class="admitDetails">
+          <span class="userName">Kaustubh Rai </span>
+          <span class="admitTerm">Fall 2024</span>
+        </div>
+        <span class="arrowIcon">&raquo;</span>
+      </div>
+    </div>
+
+  </div>
+  <button class="viewAllButton">View All Premium Admits</button>
+</div>
+
+<div style="text-align: center;">
+    <h2 style="color: orange;">SMART FEATURES</h2>
+    <h1 style="font-size: 2em;">All-Tech For Studying Abroad</h1>
+    <p>We have smart features to help you throughout your abroad education journey</p>
+  </div>
+<div id="features">
+  <div class="feature">
+    <h5>Explore Universities</h5>
+    <p>Surf through 2000+ universities abroad, all in one place, with easy filter & sort options</p>
+    <picture class="pic-1">
+      <img src="images/img5.jpg"/>
+    </picture>
+  </div>
+  <div class="feature">
+    <h5>Test Prep+</h5>
+    <p>Personalise your GRE prep as you need with live classes, mock tests, practice questions & more</p>
+    <picture>
+      <img src="images/img6.jpg"/>
+    </picture>
+  </div>
+  <div class="feature">
+    <h5>AI College Finder</h5>
+    <p>Find the Universities and Programs that best matches your profile with help of AI</p>
+    <picture>
+      <img src="images/img7.jpg"/>
+    </picture>
+  </div>
+  <div class="feature">
+    <h5>Community</h5>
+    <p>Connect with over a million study abroad students & aspirants and build your network</p>
+    <picture>
+      <img src="images/img8.jpg"/>
+    </picture>
+  </div>
+  <div class="feature">
+    <h5>Events</h5>
+    <p>Meet & greet the experts of studying abroad in webinars, events, meet-ups & more</p>
+    <picture>
+      <img src="images/img9.jpg"/>
+    </picture>
+  </div>
+  <div class="feature">
+    <h5>Finance</h5>
+    <p>Check your eligibility and start your loan process with 100% free assistance</p>
+    <picture>
+      <img src="images/img10.jpg"/>
+    </picture>
+  </div>
+
+</div>
+<div class="back">
+  <div class="container1">
+    <div class="text-container">
+      <b><h2><b>Stress-Free Study</b> </h2><h2><b>Abroad Applications:</b></h2>
+      <h2>Expert Guidance Awaits</h2></b>
+      <p>Get expert study abroad counseling and assistance with your application process. Our team of professionals will provide you with personalized support and guidance</p>
+      <button>Explore Premium</button>
+    </div>
+    <div class="image-container">
+      <img src="images/image.png" alt="Image description">
+    </div>
+  </div>
+</div>
+<div class="container3">
+  <div class="pre"><b>PREMIUM</b></div>
+  <div class="title3">Our Winning Record</div>
+  <div class="subtitle3">No tall claims, we back the efficiency of our consultancy with stats. Check for yourselves!</div>
+  <div class="stats3">
+      <div class="stat3">
+          <img src="images/ig1.png" alt="Successful Admits">
+          <p>15k+</p>
+          <span>Successful Admits</span>
+      </div>
+      <div class="stat3">
+          <img src="images/ig2.png" alt="Scholarships Achieved">
+          <p>$15 Million+</p>
+          <span>Scholarships Achieved</span>
+      </div>
+      <div class="stat3">
+          <img src="images/ig3.png" alt="Loans Sanctioned">
+          <p>3500 Cr+</p>
+          <span>Loans Sanctioned</span>
+      </div>
+      <div class="stat3">
+          <img src="images/ig4.png" alt="Visa Success Rate">
+          <p>98%</p>
+          <span>Visa Success Rate</span>
+      </div>
+  </div>
+  <div class="button3">
+      <a href="#">Explore Premium Counselling</a>
+  </div>
+</div>
+<div class="main-container">
+  <div class="head"><b>YOCKET EVENTS</b></div>
+  <div class="header-title">What's happening with overseas education</div>
+  <div class="header-subtitle">Stay up-to-date with the latest updates on overseas education, student life, rules, COVID-19, and many more!</div>
+  <div class="events-container">
+      <div class="event-card">
+          <img src="images/visa.png" alt="Event 1">
+          <div class="event-category">Loans & Visa Process</div>
+          <div class="event-title">F1 VISA Interview Preparations with Asked Questions</div>
+          <div class="event-info">
+              <i class="fas fa-calendar-alt"></i> 5th Jul, 2024 | 12:30 PM - 01:30 PM GMT <br>
+              <i class="fas fa-globe"></i> Online Event/webinar <br>
+              <i class="fas fa-user-graduate"></i> Bachelor/Masters only
+          </div>
+      </div>
+      <div class="event-card">
+          <img src="images/all.png" alt="Event 2">
+          <div class="event-category">Application Process</div>
+          <div class="event-title">The Insider's Guide: Dive Deep into ASU, NEU, & Stevens (Spring '25)</div>
+          <div class="event-info">
+              <i class="fas fa-calendar-alt"></i> 5th Jul, 2024 | 01:30 PM - 02:30 PM GMT <br>
+              <i class="fas fa-globe"></i> Online Event/webinar <br>
+              <i class="fas fa-user-graduate"></i> Bachelor/Masters only
+          </div>
+      </div>
+      <div class="event-card">
+          <img src="images/uni.png" alt="Event 3">
+          <div class="event-category">Basics of Study Abroad</div>
+          <div class="event-title">PROFILE BUILDING: TOP 100 UNIVERSITIES 2025!</div>
+          <div class="event-info">
+              <i class="fas fa-calendar-alt"></i> 5th Jul, 2024 | 02:00 PM - 03:00 PM GMT <br>
+              <i class="fas fa-globe"></i> Online Event/webinar <br>
+              <i class="fas fa-user-graduate"></i> Masters only
+          </div>
+      </div>
+  </div>
+  
+  <a href="#" class="btn" style="margin-top: 20px;">Explore more events</a>
+  </div>
+</div>
+<div class="review-container">
+  <div class="review-title">PREMIUM STUDENT REVIEWS</div>
+  <div class="review-subtitle">Trusted by thousands far and wide</div>
+  <div class="review-list">
+      <div class="review-item">
+          <img src="images/google.png" alt="Google Logo">
+          <div class="review-stars">★★★★☆</div>
+          <div class="review-rating">4.6 stars</div>
+          <div class="review-count">1,600+ reviews</div>
+      </div>
+      <div class="review-item">
+          <img src="images/tru.png" alt="Trustpilot Logo">
+          <div class="review-stars">★★★★☆</div>
+          <div class="review-rating">4.5 stars</div>
+          <div class="review-count">1,200+ reviews</div>
+      </div>
+  </div>
+</div>
+<div class="testimonial-container">
+  <div class="nav-button left">&lt;</div>
+  <img class="logo" src="images/pen.png" alt="PennState">
+  <div class="testimonial-title">Couldn't have asked for anything better than this.</div>
+  <div class="testimonial-text">
+      I 100% recommend it to anyone who is interested in pursuing education abroad. My counselor Preeti and her team helped me on each and every step of the application. They guided me from Uni shortlisting to essays.
+  </div>
+  <div class="testimonial-author">
+      <img src="images/user.png" alt="Author">
+      <div class="testimonial-author-name">Vidhatri Hegde</div>
+      <div class="testimonial-author-info">BS in Computer Science • 2022</div>
+  </div>
+  <div class="nav-button right">&gt;</div>
+</div>
+
+</section>
+<section class="reviews-section">
+    <h2>Watch the Yocketers share their experience</h2>
+    <div class="reviews-container">
+        <div class="review-card">
+            <div class="review-card-header">
+                <img src="images/youtube 1.png" alt="Rakshit Grover" class="review-thumbnail">
+                <div class="review-overlay">
+                    <button class="play-button">▶</button>
+                </div>
+            </div>
+            <div class="review-card-content">
+                <h3>Rakshit Grover's Story</h3>
+                <p>Duke University • 2022</p>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-header">
+                <img src="images/youtube 2.png" alt="Suchit Sahoo" class="review-thumbnail">
+                <div class="review-overlay">
+                    <button class="play-button">▶</button>
+                </div>
+            </div>
+            <div class="review-card-content">
+                <h3>Suchit Sahoo's Story</h3>
+                <p>Columbia University • 2022</p>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-header">
+                <img src="images/youtube 3.png" alt="Somraj Dasgupta" class="review-thumbnail">
+                <div class="review-overlay">
+                    <button class="play-button">▶</button>
+                </div>
+            </div>
+            <div class="review-card-content">
+                <h3>Somraj Dasgupta's Story</h3>
+                <p>Duke University • 2022</p>
+            </div>
+        </div>
+    </div>
+    <a href="https://www.youtube.com" class="watch-more">Watch more on Youtube ></a>
+</section>
+ <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">
+                What is Yocket?
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="faq-answer">
+                Yocket is a platform that provides resources and support for students planning to study abroad.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                Does Yocket Provide Paid Study Abroad Counselling?
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="faq-answer">
+                Yes, Yocket offers paid counselling services to help students with their study abroad plans.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What is Yocket Premium?
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="faq-answer">
+                Yocket Premium is a subscription service that offers additional resources and personalized support.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                Does Yocket help with student loans?
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="faq-answer">
+                Yes, Yocket provides information and assistance with obtaining student loans.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                Does Yocket help with GRE preparation too?
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="faq-answer">
+                Yes, Yocket offers resources for GRE preparation as part of its services.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                Does Yocket help with application to all universities?
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="faq-answer">
+                Yes, Yocket assists with applications to a wide range of universities worldwide.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                Why does Yocket charge for its paid counselling?
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="faq-answer">
+                The fee for Yocket's counselling services supports the provision of personalized advice and resources.
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cta-section">
+    
+        <div class="cta-text">
+            <p style="font-weight: bold;">So, what are you waiting for?</p>
+            <p style="font-weight: bold;">Launch your study abroad journey today!</p>
+        </div>
+        <div class="cta-button-container">
+            <button class="cta-button">Let's Get Started</button>
+        </div>
+    
+</section>
+<section>
+    <img src="images/phone.png" style="width: 100%;">
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left" style="margin-top: -30px;">
+            <div class="footer-logo">
+                <img src="images/roundy.png" alt="Yocket Logo" style="width: 70px;height: 50px;">
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"></a><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="footer-text">
+                <p>© 2024 Yocket. All rights reserved</p>
+            </div>
+            <hr style="width: 50px;margin-left: 5px;">
+            <div class="footer-call">
+                <p style="font-size: 16px;color: #2B3440;font-weight: bold;">Want to discuss your <br>goals?<p>Our experts are here to make it happen.</p>
+                <button class="call-now" style="width: 182px;height: 40px;border-radius: 9px;"><i class="fa-solid fa-user" style="margin-right: 10px;"></i>Call now</button>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-column" style="margin-left: 100px;">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>POPULAR COURSES</h4>
+                <ul>
+                    <li><a href="#">MASTERS</a></li>
+                    <li><a href="#">Computer Science</a></li>
+                    <li><a href="#">MBA</a></li>
+                    <li><a href="#">Data Science & Analytics</a></li>
+                    <li><a href="#">BACHELORS</a></li>
+                    <li><a href="#">Business Administration</a></li>
+                    <li><a href="#">Business Analytics</a></li>
+                    <li><a href="#">Computer Engineering</a></li>
+                    <li><a href="#" class="orange-link">See all courses</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>TOP UNIVERSITIES</h4>
+                <ul>
+                    <li><a href="#">BY COUNTRY</a></li>
+                    <li><a href="#">USA</a></li>
+                    <li><a href="#">Canada</a></li>
+                    <li><a href="#">UK</a></li>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">Germany</a></li>
+                    <li><a href="#">BY COURSE</a></li>
+                    <li><a href="#">MBA</a></li>
+                    <li><a href="#">Computer Science</a></li>
+                    <li><a href="#">Industrial Engineering</a></li>
+                    <li><a href="#" class="orange-link">See all universities</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>STUDY ABROAD GUIDE</h4>
+                <ul>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+                <h4>YOCKET TOOLS & SERVICES</h4>
+                <ul>
+                    <li><a href="#">Grad School Finder</a></li>
+                    <li><a href="#">Undergrad College Finder</a></li>
+                    <li><a href="#">Loan Finder</a></li>
+                    <li><a href="#">Yocket GRE Prep</a></li>
+                </ul>
+            </div>
+            <div class="footer-column" style="margin-left: 780px;">
+                <h4>OUR PARTNERS</h4>
+                <ul>
+                    <li><a href="#">Leap Scholar</a></li>
+                    <li><a href="#">Leap Finance</a></li>
+                    <li><a href="#">Geebee</a></li>
+                </ul>
+                <h4>OUR PRODUCTS</h4>
+                <ul>
+                    <li><a href="#">Yocket</a></li>
+                    <li><a href="#">Yocket Prep</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
